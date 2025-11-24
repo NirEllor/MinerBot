@@ -79,7 +79,8 @@ Create environment file:
 cp .env.example .env
 
 Run:
-npm miner.js
+**Single instance:** npm miner.js
+**Multiple instances in parallel:** runAll.bat
 
 ## ⚙️ Environment Variables
 INFURA_API_KEY=your_infura_key
