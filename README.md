@@ -1,4 +1,4 @@
-Web3 Testnet Mining Simulator
+Web3 Testnet Mining 
 
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Ethereum](https://img.shields.io/badge/Ethereum-Sepolia-purple?logo=ethereum&logoColor=white)](https://ethereum.org/)
@@ -7,9 +7,9 @@ Web3 Testnet Mining Simulator
 
 ---
 
-🤖 Automated Web3 Mining Simulator for Research
+🤖 Automated Web3 Mining for Research
 
-MiningBot simulates the behavior and workflow of a Web3 testnet miner —
+MiningBot acts as a Web3 testnet miner —
 including automated reward collection, wallet cycling, and multi-worker orchestration —
 to recreate the full experience of Sepolia-style testnet liquidity generation for research environments.
 
@@ -22,10 +22,10 @@ at The Hebrew University of Jerusalem.
 
 ## ⚙️ Features
 
-- ⚡ **Parallel mining simulation** – Simulated concurrent faucet requests with async or Docker workers
+- ⚡ **Parallel mining** – concurrent faucet requests with async or Docker workers
 - 🔐 **Secure wallet handling** – environment-based private-key management
-- 🌐 **RPC integration** – Simulates to work with **Infura**, **Alchemy**, or any custom endpoint
-- 🧠 **Smart scheduling** – timed requests to prevent faucet bans (Only Simulation)
+- 🌐 **RPC integration** –  works with **Infura**, **Alchemy**, or any custom endpoint
+- 🧠 **Smart scheduling** – timed requests to prevent faucet bans
 - 🪄 **Automated fund redistribution** – balances wallets dynamically for experiments
 - 🧰 **Docker-ready** deployment
 
@@ -41,7 +41,7 @@ at The Hebrew University of Jerusalem.
          v                
 +-------------------+     
 |   Mining Manager  | 
-|     (Simulated    |
+|                   |
 |  Parallel Faucet) |     
 +--------+----------+     
          |                
@@ -59,7 +59,7 @@ at The Hebrew University of Jerusalem.
 | Category | Tools |
 |-----------|-------|
 | Language | JavaScript |
-| Blockchain | Ethereum Sepolia (simulated workflow) |
+| Blockchain | Ethereum Sepolia |
 | Infrastructure | Optional: Infura RPC for account checks |
 | Automation | Docker / asyncio |
 | Security | `.env` key management |
@@ -95,7 +95,7 @@ docker run -d --env-file .env miningbot
 
 ## 📊 Example Output
 [INFO] Mining round started...
-[INFO] Wallet 0x1a3f... received 0.1 SepoliaETH (Simulation)
+[INFO] Wallet 0x1a3f... received 0.1 SepoliaETH
 [INFO] Balances reallocated successfully
 [INFO] Sleeping for 60 seconds...
 
